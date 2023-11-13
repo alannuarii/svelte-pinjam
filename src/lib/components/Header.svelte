@@ -3,7 +3,7 @@
 		<!-- svelte-ignore a11y-missing-attribute -->
 		<a class="navbar-brand">Navbar</a>
 
-		<button class="btn btn-outline-success" type="submit">Search</button>
+		<button class="btn btn-outline-success" type="submit">Input</button>
 	</div>
 </nav>
 
