@@ -5,7 +5,7 @@
 <nav class="navbar bg-dark">
 	<div class="container-fluid">
 		<!-- svelte-ignore a11y-missing-attribute -->
-		<a class="navbar-brand">Navbar</a>
+		<a class="navbar-brand">Monitoring Dana Talangan</a>
 
 		<button
 			class="btn btn-sm btn-outline-warning"
