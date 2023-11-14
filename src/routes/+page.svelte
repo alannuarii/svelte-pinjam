@@ -1,12 +1,19 @@
 <script>
+	export let data;
+
+	const data1 = data.data1.data.length > 0 ? data.data1.data : [];
+	const data2 = data.data2.data.length > 0 ? data.data2.data : [];
+
+	console.log(data1)
+	console.log(data2);
+
 	const dataPinjaman = [
 		{ nama: 'Imran Mokodompit', pinjaman: 3000000, dibayar: 0 },
 		{ nama: 'Faisal Manopode', pinjaman: 2500000, dibayar: 0 },
 		{ nama: 'Karter Tanduk', pinjaman: 4000000, dibayar: 0 },
 		{ nama: 'Jerry Legoh', pinjaman: 3500000, dibayar: 0 },
 		{ nama: 'Refiansa Mokodompit', pinjaman: 500000, dibayar: 0 },
-		{ nama: 'Jonly Tulandi', pinjaman: 2000000, dibayar: 500000 },
-		{ nama: 'Michael Baranoy', pinjaman: 3000000, dibayar: 2700000 }
+		{ nama: 'Jonly Tulandi', pinjaman: 2000000, dibayar: 500000 }
 	];
 </script>
 

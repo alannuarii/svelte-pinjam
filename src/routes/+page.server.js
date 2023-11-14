@@ -20,3 +20,15 @@ export const actions = {
 		return res.json();
 	}
 };
+
+export const load = async () => {
+	const [res1, res2] = await Promise.all([
+		fetch(`${API_ENDPOINT}/get-pinjaman`).then((res)=> res.json()),
+		fetch(`${API_ENDPOINT}/get-data`).then((res)=> res.json())
+	]) 
+
+	return {
+		data1: res1,
+		data2: res2
+	};
+};
