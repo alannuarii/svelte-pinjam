@@ -39,7 +39,7 @@
 			<thead>
 				<tr class="text-center">
 					<th scope="col">No</th>
-					<th scope="col" class="nama">Nama</th>
+					<th scope="col">Nama</th>
 					<th scope="col">Pinjaman</th>
 					<th scope="col">Dibayar</th>
 					<th scope="col">Sisa</th>
@@ -52,17 +52,31 @@
 						<td>{sec.nama}</td>
 						<td class="text-center align-middle">{(sec.pinjaman + sec.pinjam).toLocaleString()}</td>
 						<td class="text-center align-middle">{sec.bayar.toLocaleString()}</td>
-						<td class="text-center align-middle">{(sec.pinjaman + sec.pinjam - sec.bayar).toLocaleString()}</td>
+						<td class="text-center align-middle"
+							>{(sec.pinjaman + sec.pinjam - sec.bayar).toLocaleString()}</td
+						>
 					</tr>
 				{/each}
 				<tr class="total">
 					<td colspan="2" class="text-center align-middle">TOTAL</td>
-					<td>{(totalPinjaman + totalPinjam).toLocaleString()}</td>
-					<td>{totalBayar.toLocaleString()}</td>
-					<td>{(totalPinjaman + totalPinjam - totalBayar).toLocaleString()}</td>
+					<td class="text-center align-middle">{(totalPinjaman + totalPinjam).toLocaleString()}</td>
+					<td class="text-center align-middle">{totalBayar.toLocaleString()}</td>
+					<td class="text-center align-middle"
+						>{(totalPinjaman + totalPinjam - totalBayar).toLocaleString()}</td
+					>
 				</tr>
 			</tbody>
 		</table>
+	</div>
+	<div class="mt-3">
+		<h6>Catatan:</h6>
+		<ul class="list-group">
+			<li class="list-group-item">Total dana talangan PLTD Rp 16.500.000</li>
+			<li class="list-group-item">Total pinjaman Ewin Rp 3.000.000</li>
+			<li class="list-group-item">Pinjaman Ewin yang sudah dibayar Rp 2.700.000</li>
+			<li class="list-group-item">Sisa pinjaman Ewin Rp 300.000</li>
+			<li class="list-group-item">Sebagian pinjaman Ewin yang dibayar dibagi kembali ke security</li>
+		</ul>
 	</div>
 </section>
 
@@ -70,5 +84,8 @@
 	.total td,
 	tr th {
 		font-weight: 700;
+	}
+	tr th {
+		background-color: #e5e5e5;
 	}
 </style>
