@@ -13,7 +13,9 @@ COPY . .
 
 # Set environment variables
 ARG API_ENDPOINT
+ARG ORIGIN
 ENV API_ENDPOINT=$API_ENDPOINT
+ENV ORIGIN=$ORIGIN
 
 # Command to run the application
 CMD ["npm", "run", "dev"]
